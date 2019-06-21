@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <div class="header_wrap">
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav_wrap">
+                <div  class="nav_piece now">
+                    <h1 onclick="javascript:window.open('index.html','_self');">首页</h1>
+                </div >
+                <div  class="nav_piece has_downnav">
+                    <h1>小鸟掌学 <span class="xiajiantou_img"></span></h1>
+                    <ul style=" 
+                        overflow: hidden;
+                        display: none;
+                        height: 240px;
+                        padding-top: 0px;
+                        margin-top: 0px;
+                        padding-bottom: 0px;
+                        margin-bottom: 0px; 
+                    "class="animated">
+                        <li onclick="javascript:window.open('zhangxue.html#0','_blank');">小鸟掌学主页</li>
+                        <li onclick="javascript:window.open('zhangxue.html#1','_blank');">小鸟掌学概述</li>
+                        <li onclick="javascript:window.open('zhangxue.html#2','_blank');">对企业的价值</li>
+                        <li onclick="javascript:window.open('zhangxue.html#3','_blank');">小鸟掌云</li>
+                        <li>微课联盟</li>
+                        <li onclick="javascript:window.open('zhangxue.html#4','_blank');">App下载</li>
+                    </ul>
+                </div >
+                <div  class="nav_piece"><h1 onclick="javascript:window.open('list.html','_blank');">小鸟动态</h1></div >
+                <div  class="nav_piece has_downnav">
+                    <h1>企业文化 <span class="xiajiantou_img"></span></h1>
+                    <ul style="overflow: hidden;
+                    display: none;
+                    height: 120px;
+                    padding-top: 0px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;" class="animated">
+                            <li onclick="javascript:window.open('telus.html?type=companyIdea','_self');">公司理念</li>
+                            <li onclick="javascript:window.open('telus.html?type=companyCulture','_self');">公司文化</li>
+                            <li onclick="javascript:window.open('telus.html?type=companyEnvironment','_self');">公司氛围</li>
+                        </ul>
+                </div >
+                <div  class="nav_piece has_downnav">
+                    <h1>人力资源 <span class="xiajiantou_img"></span></h1>
+                    <ul style="overflow: hidden;
+                    display: none;
+                    height: 120px;
+                    padding-top: 0px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;"class="animated">
+                           <li onclick="javascript:window.open('telus.html?type=talents','_self');">人才理念</li>
+                           <li onclick="javascript:window.open('telus.html?type=team','_self');">团队介绍</li>
+                           <li onclick="javascript:window.open('telus.html?type=joinUs','_self');">招聘信息</li>
+                    </ul>
+
+                </div >
+                <div  class="nav_piece">
+                    <h1 onclick="javascript:window.open('telus.html?type=telUs','_self');">联系我们</h1>
+                </div >
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.12.3.js"></script>
+<script>
+    $(".has_downnav").mouseenter(function(){
+        $(this).children("ul").stop().slideDown("slow")
+    }).mouseleave(function(){
+        $(this).children("ul").stop().slideUp("slow") 
+    })
+
+   
+
+</script>
+
+</html>

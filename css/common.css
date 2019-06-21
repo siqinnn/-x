@@ -1,0 +1,288 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;font-family: "楷体";}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#f1f2f6; font-size: 15px;   font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;}
+a,a:hover{color:#333;}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.inner{
+	width: 1102px;
+	position: relative;
+	margin: auto;
+}
+.title{
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+.sup-tit{
+	line-height: 60px;
+	font-size: 54px;
+	color: #311759;
+}
+.sub-tit{
+	line-height: 30px;
+	font-size: 19px;
+	color: #311759;
+	font-family:  Arial, Helvetica, sans-serif;
+	letter-spacing: 6px;
+	padding-bottom: 20px;
+}
+/*返回顶部浮动*/
+.fixed_tip{
+	width:87px;
+	height:161px;
+	position:fixed;
+	bottom:160px;
+	right:40px;
+	display:none;
+}
+.scroll_top{
+	background:url(/项目一/img/scroll_top_bg.png) no-repeat;
+	height:50px;
+	width:50px;
+	cursor:pointer;
+	margin-left:17px;
+	margin-bottom:24px;
+}
+.scroll_top:hover{
+	background-position:0 -50px;
+	transition: all 0.3s ease 0s;
+}
+.fixed_contactus{
+	width:87px;
+	height:87px;
+	position:absolute;
+	right:0;
+	top:74px;
+	background:url(/项目一/img/fixed_contactus.png) top right no-repeat;
+	cursor:pointer;
+}
+.fixed_contactus:hover{
+	width:235px;
+	animation:1s linear 0s normal none 1 running su-pudding;
+	transition: all 0.5s ease 0s;
+}
+@keyframes su-pudding {
+    0% {
+        transform: scale(1.2, 0.8);
+    }
+
+    1% {
+        transform: scale(1.18, 0.82);
+    }
+
+    2% {
+        transform: scale(1.16, 0.84);
+    }
+
+    3% {
+        transform: scale(1.13, 0.87);
+    }
+
+    4% {
+        transform: scale(1.1, 0.9);
+    }
+
+    5% {
+        transform: scale(1.07, 0.93);
+    }
+
+    6% {
+        transform: scale(1.04, 0.96);
+    }
+
+    7% {
+        transform: scale(1.01, 0.99);
+    }
+
+    8% {
+        transform: scale(0.99, 1.01);
+    }
+
+    9% {
+        transform: scale(0.97, 1.03);
+    }
+
+    10% {
+        transform: scale(0.95, 1.05);
+    }
+
+    11% {
+        transform: scale(0.94, 1.06);
+    }
+
+    12% {
+        transform: scale(0.93, 1.07);
+    }
+
+    13% {
+        transform: scale(0.93, 1.07);
+    }
+
+    14% {
+        transform: scale(0.93, 1.07);
+    }
+
+    15% {
+        transform: scale(0.93, 1.07);
+    }
+
+    16% {
+        transform: scale(0.94, 1.06);
+    }
+
+    17% {
+        transform: scale(0.94, 1.06);
+    }
+
+    18% {
+        transform: scale(0.95, 1.05);
+    }
+
+    19% {
+        transform: scale(0.96, 1.04);
+    }
+
+    20% {
+        transform: scale(0.98, 1.02);
+    }
+
+    21% {
+        transform: scale(0.99, 1.01);
+    }
+
+    22% {
+        transform: scale(1, 1);
+    }
+
+    23% {
+        transform: scale(1, 1);
+    }
+
+    24% {
+        transform: scale(1.01, 0.99);
+    }
+
+    25% {
+        transform: scale(1.02, 0.98);
+    }
+
+    26% {
+        transform: scale(1.02, 0.98);
+    }
+
+    27% {
+        transform: scale(1.02, 0.98);
+    }
+
+    28% {
+        transform: scale(1.03, 0.97);
+    }
+
+    29% {
+        transform: scale(1.03, 0.97);
+    }
+
+    30% {
+        transform: scale(1.02, 0.98);
+    }
+
+    31% {
+        transform: scale(1.02, 0.98);
+    }
+
+    32% {
+        transform: scale(1.02, 0.98);
+    }
+
+    33% {
+        transform: scale(1.02, 0.98);
+    }
+
+    34% {
+        transform: scale(1.01, 0.99);
+    }
+
+    35% {
+        transform: scale(1.01, 0.99);
+    }
+
+    36% {
+        transform: scale(1.01, 0.99);
+    }
+
+    37% {
+        transform: scale(1, 1);
+    }
+
+    38% {
+        transform: scale(1, 1);
+    }
+
+    39% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(0.99, 1.01);
+    }
+
+    41% {
+        transform: scale(0.99, 1.01);
+    }
+
+    42% {
+        transform: scale(0.99, 1.01);
+    }
+
+    43% {
+        transform: scale(0.99, 1.01);
+    }
+
+    44% {
+        transform: scale(0.99, 1.01);
+    }
+
+    45% {
+        transform: scale(0.99, 1.01);
+    }
+
+    46% {
+        transform: scale(0.99, 1.01);
+    }
+
+    47% {
+        transform: scale(0.99, 1.01);
+    }
+
+    48% {
+        transform: scale(0.99, 1.01);
+    }
+
+    49% {
+        transform: scale(1, 1);
+    }
+
+}
+

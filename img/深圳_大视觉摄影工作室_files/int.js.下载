@@ -1,0 +1,60 @@
+jQuery.fn.preload_images=function(a){a=$.extend({orc:"original"},a),$(this).each(function(b){var c=new Image,d=$(this);return $(c).load(function(){d.attr("src",d.attr(a.orc))}).error(function(){}).attr("src",d.attr(a.orc)),d})}
+
+    ;var imgReady=(function(){var g=[],h=null,e=function(){var a=0;for(;a<g.length;a++){g[a].end?g.splice(a--,1):g[a]()}!g.length&&f()},f=function(){clearInterval(h);h=null};return function(s,d,b,o){var c,r,a,p,t,q=new Image();q.src=s;if(q.complete){d.call(q);b&&b.call(q);return}r=q.width;a=q.height;q.onerror=function(){o&&o.call(q);c.end=true;q=q.onload=q.onerror=null};c=function(){p=q.width;t=q.height;if(p!==r||t!==a||p*t>1024){d.call(q);c.end=true}};c();q.onload=function(){!c.end&&c();b&&b.call(q);q=q.onload=q.onerror=null};if(!c.end){g.push(c);if(h===null){h=setInterval(e,40)}}}}());
+
+    ;jQuery.fn.cache_images=function(rd){this.each(function(){var a=jQuery(this);imgReady(a.attr("src"),function(){},function(){},function(){if(a.attr("src").indexOf("?cache")<0){a.attr("src",a.attr("src")+"?cache");rd && rd.call(a);}} );
+
+
+    })};
+$('img[data-cache=true]').cache_images(function(a){$(a).lazyload({placeholder : "Public/images/com/touming.gif",effect : "fadeIn" });})
+var mySwiper = new Swiper ('.swiper-containerpj',{
+    direction:'horizontal',
+    loop:true,
+    centeredSlides : true,
+    slidesPerView : 3,
+    spaceBetween : 20,
+    slidesPerGroup : 1,    
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+});
+
+var mySwiper = new Swiper ('.swiper-container',{
+    direction:'horizontal',
+    loop:true,
+    autoplay : 4000,
+    pagination: '.swiper-pagination',  
+    paginationClickable :true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+});
+
+var tabsSwiper = new Swiper('.swiper-containerlb', {
+        speed:500,
+        autoHeight: true, //enable auto height
+        hashnav:true,
+    onSlideChangeEnd: function (swiper) {
+        var j=tabsSwiper.activeIndex;
+        $('.maple-tab a').removeClass('active').eq(j).addClass('active');
+    }
+})
+/*列表切换*/
+$('.maple-tab a').on('mouseenter', function (e) {
+    e.preventDefault();
+    //得到当前索引
+    var i=$(this).index();
+    $('.maple-tab a').removeClass('active').eq(i).addClass('active');
+    tabsSwiper.slideTo($(this).index());
+});
+
+$(function() {
+    $("img.lazy").lazyload({ 
+    placeholder : "View/Home/images/loading.gif",
+           effect: "fadeIn"
+     });  
+});
+$(function() {
+    $('.dowebok').viewer({
+        url: 'data-ori',
+    });
+});
+$("a.lightbox2").fancybox({ 'transitionIn': 'fade', 'transitionOut': 'fade', 'speedIn': 600, 'speedOut': 200, 'overlayShow': false, 'padding': 10, 'centerOnScroll': true,'loop':0,'showNavArrows': true,});

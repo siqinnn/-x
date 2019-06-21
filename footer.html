@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body>
+        <div class="footer_wrap">
+                <div class="footer">
+                    <div class="music">
+                        <span class="animated">
+                                <!-- <audio src="music/sound00.mp3" ></audio>  -->
+                        </span>
+                        <span class="animated" style="background-image:url(img/yinyue_lai.png)">
+                            <!-- <audio src="music/sound01.mp3"></audio> -->
+                        </span>
+                        <span class="animated" style="background-image:url(img/yinyue_mi.png)">
+                            <!-- <audio src="music/sound02.mp3"></audio> -->
+                        </span>
+                        <span class="animated" style="background-image:url(img/yinyue_fa.png)">
+                            <!-- <audio src="music/sound03.mp3"></audio> -->
+                        </span> 
+                        <span class="animated" style="background-image:url(img/yinyue_suo.png)">
+                            <!-- <audio src="music/sound04.mp3"></audio> -->
+                        </span>
+                        <span class="animated" style="background-image:url(img/yinyue_la.png)">
+                            <!-- <audio src="music/sound05.mp3"></audio> -->
+                        </span>
+                        <span class="animated" style="background-image:url(img/yinyue_xi.png)">
+                            <!-- <audio src="music/sound06.mp3" ></audio> -->
+                        </span>
+                    </div>
+                    <div class="music_content">
+                        <!--<embed src="music/sound 68.mp3" autostart="true" loop="true" width="200" height="200"></embed>-->
+                        <!--<embed id="myaudio" src="" autostart="" loop="false" hidden="true"  >-->
+                         
+                        <!--<embed src="music/sound00.mp3" autostart="true" playcount="true" loop="true" height="0" width="0"></embed>-->
+                        
+                        <!--<bgsound id="myaudio" src="music/sound00.mp3" autostart=true loop=false>
+                        <embed id="myaudio" src="music/sound00.mp3" autostart="" loop="false" hidden="true"  ></embed>-->
+                        
+                    </div>
+                    <div class="shenmin" id="beiaishenmin">蜀ICP备16002451号</div>
+                </div>
+            </div>
+</body>
+<script src="js/jquery-1.12.3.js"></script>
+<script>
+  $(".music span").click(function(){
+      console.log($(this))
+      var index=$(this).index()
+      $(this).append('<audio src="music/sound0'+index+'.mp3" autoplay></audio>')
+    })
+</script>
+</html>
